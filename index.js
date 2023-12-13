@@ -20,7 +20,10 @@ const generateLogo = async () => {
         console.error('Invalid shape');
         return;
     }
-    
+
     shape.setColor(userInput.shapeColor);
     shape.setText(userInput.text);
+
+    const svgContent = shape.render();
+
 };
