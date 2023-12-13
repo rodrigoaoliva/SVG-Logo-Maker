@@ -26,4 +26,11 @@ const generateLogo = async () => {
 
     const svgContent = shape.render();
 
-};
+    const fileName = 'logo.svg';
+    writeToFile(fileName, svgContent);
+  
+    console.log(`Generated ${fileName}`);
+  };
+  
+  generateLogo();
+  
